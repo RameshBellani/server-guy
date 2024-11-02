@@ -1,0 +1,113 @@
+/* Container for the whole background */
+.login-bg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #ff5722, #ff8a65); /* Gradient background */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Styling for the login form */
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3); /* Increased shadow for depth */
+    border-radius: 12px; /* Increased border-radius for a softer look */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease; /* Smooth hover transition */
+}
+.logo-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styling for the heading of the login form */
+.login-heading {
+    font-size: 28px; /* Increased font size for heading */
+    font-weight: bold;
+    color: #2d1f1f; /* White text for contrast */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for labels */
+.login-label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+/* Styling for input fields */
+.login-input {
+    width: 100%;
+    height: 50px; /* Increased height for a more substantial feel */
+    margin-bottom: 15px;
+    padding: 0 15px; /* Increased padding */
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly increased border radius for inputs */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+.login-input:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5); /* Subtle shadow on focus */
+}
+
+/* Position for the password visibility toggle */
+.password-input-container {
+    position: relative; /* Position relative for the icon */
+}
+
+/* Styling for the password visibility toggle */
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 15px; /* Position the icon */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ff5722; /* Icon color */
+}
+
+/* Styling for the login button */
+.login-button {
+    width: 100%;
+    height: 50px; /* Increased button height */
+    font-size: 18px; /* Increased font size for better readability */
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Added transition for transform and shadow */
+}
+
+.login-button:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Footer styling for additional information */
+.login-footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-footer a {
+    color: #ff5722; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.login-footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
