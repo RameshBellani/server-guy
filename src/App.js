@@ -1,3 +1,4 @@
+//App.js
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Login from "./components/Login";
@@ -9,7 +10,6 @@ function App() {
   const [username, setUsername] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  
   useEffect(() => {
     const storedUsername = localStorage.getItem('username');
     if (storedUsername) {

@@ -50,7 +50,7 @@ const Login = () => {
                     className="login-input"
                     type="text"
                     id="username"
-                    placeholder="Enter your name..."
+                    placeholder="serverguy"
                     value={usernameInput}
                     onChange={handleUsernameChange}
                 />
@@ -60,12 +60,12 @@ const Login = () => {
                         className="login-input"
                         type={showPassword ? "text" : "password"}
                         id="password"
-                        placeholder="Enter your password..."
+                        placeholder="12345"
                         value={passwordInput}
                         onChange={handlePasswordChange}
                     />
                     <span className="password-toggle" onClick={handlePasswordToggle}>
-                        {showPassword ? "👁️" : "👁️‍🗨️"} {/* Simple icons for visibility toggle */}
+                        {showPassword ? "👁️" : "👁️‍🗨️"} 
                     </span>
                 </div>
                 <button type="button" className="login-button" onClick={handleSubmit}>
